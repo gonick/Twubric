@@ -1,0 +1,51 @@
+.remove-padding{
+    padding:0
+}
+.remove-padding-R{
+    padding-right:0
+}
+.remove-padding-L{
+    padding-left:0
+}
+.follower-container{
+    border:1px solid #eee;
+    border-radius: 2px;
+    margin:15px 0px;
+    padding:10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+    background-color: white;
+}
+.box-row{
+    background-color: #eee;
+    padding:10px;
+}
+.box-container:not(:last-child){
+    border-right:1px solid #ddd;
+}
+.footer{
+     padding:10px 0px 10px 0px;
+}
+.count{
+    font-size:22px
+}
+.prop-name{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.user-name{
+    font-size:20px;
+}
+.heading-row{
+    padding:10px 0px 10px 0px;
+}
+.user-image img{
+    border-radius:100%;
+}
+.btn-remove:hover,.btn-remove:focus{
+background-color: white;
+}
+.badge{
+    background-color:  #307bba;
+}

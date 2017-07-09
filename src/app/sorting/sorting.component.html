@@ -1,0 +1,15 @@
+<!--<div class="row">
+  <isotope>
+  <isotope-brick class="brick" *ngFor="let brick of bricks">{{brick.title}}</isotope-brick>
+</isotope>
+</div>-->
+
+<div class="col-xs-12">
+  <h5>Sort</h5>
+<div class="btn-group">
+  <a href="#" class="btn btn-default" (click)="onclick('total')"><b><u>T</u></b>wubric Score <i class="glyphicon" *ngIf="currentSort=='total'" [ngClass]="{'glyphicon-sort-by-attributes-alt':currentSortType==2,'glyphicon-sort-by-attributes':currentSortType==1}"></i></a>
+  <a href="#" class="btn btn-default" (click)="onclick('friends')"><b><u>F</u></b>riends  <i class="glyphicon" *ngIf="currentSort=='friends'" [ngClass]="{'glyphicon-sort-by-attributes-alt':currentSortType==2,'glyphicon-sort-by-attributes':currentSortType==1}"></i></a>
+  <a href="#" class="btn btn-default" (click)="onclick('influence')"><b><u>I</u></b>nfluence <i class="glyphicon" *ngIf="currentSort=='influence'" [ngClass]="{'glyphicon-sort-by-attributes-alt':currentSortType==2,'glyphicon-sort-by-attributes':currentSortType==1}"></i></a>
+  <a href="#" class="btn btn-default" (click)="onclick('chirpiness')"><b><u>C</u></b>hirpiness <i class="glyphicon" *ngIf="currentSort=='chirpiness'" [ngClass]="{'glyphicon-sort-by-attributes-alt':currentSortType==2,'glyphicon-sort-by-attributes':currentSortType==1}"></i></a>
+</div>
+</div>

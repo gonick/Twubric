@@ -1,0 +1,17 @@
+<div class="col-xs-12">
+<h5> Filter</h5>
+<div >
+Start date : <material-datepicker  [(date)]="currentStartDate"
+[rangeStart]="startDate"
+[rangeEnd]="endDate"
+[placeholder]="''"
+(onSelect)="onSelect($event)"
+></material-datepicker>
+&nbsp; End date : <material-datepicker [(date)]="currentEndDate"
+[rangeStart]="startDate"
+[rangeEnd]="endDate"
+[placeholder]="''"
+(onSelect)="onSelect($event)"
+></material-datepicker>
+</div>
+</div>

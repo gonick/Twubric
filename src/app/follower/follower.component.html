@@ -1,0 +1,28 @@
+<!--<div class="col-xs-4 col-sm-3 col-md-4 ">-->
+  <div class="col-xs-12 col-sm-12 col-md-12 ">
+<div class="follower-container col-xs-12">
+   <div class="col-xs-12 heading-row remove-padding">
+     <div class="col-xs-1 user-image remove-padding"> <img [src]="follower.image"/></div>
+    <div class="col-xs-9 user-name">{{follower.fullname}}</div>
+    <div class="col-xs-2 remove-padding-R text-right total-count"><span class="total badge">{{follower.twubric.total}}</span></div>
+  </div>
+  <div class="col-xs-12 box-row">
+    <div class="col-xs-4 remove-padding box-container">
+      <div class="count friends-count text-center">{{follower.twubric.friends}}</div>
+      <div class="prop-name text-center">friends</div>
+    </div>
+    <div class="col-xs-4 remove-padding box-container">
+      <div class="influence-count count text-center">{{follower.twubric.influence}}</div>
+      <div class="prop-name text-center">influence</div>
+    </div>
+    <div class="col-xs-4 remove-padding box-container">
+      <div class="chirpiness-count count text-center">{{follower.twubric.chirpiness}}</div>
+      <div class="prop-name text-center">chirpiness</div>
+    </div>
+  </div>
+  <div class="col-xs-12 footer">
+    <div class="col-xs-4 remove-padding">{{follower.join_date|date}}</div>
+    <div class="col-xs-8 text-right remove-padding"><a class="btn btn-default btn-remove" (click)="onRemove()">Remove</a></div>
+  </div>
+</div>
+</div>

@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class="row" style="padding-left:15px">
+    <div class="col-xs-4" ng-cloak>
+        <app-sorting (notify)="onNotify($event)" [currentSort]="currentSort" [currentSortType]="currentSortType"></app-sorting>
+    </div>
+    <div class="col-xs-6" ng-cloak>
+        <app-date [(startDate)]="startDate" [(endDate)]="endDate" (dateChange)="onStartDateChange($event)"></app-date>
+    </div>
+</div>
+<div class="col-xs-12" ng-cloak >
+    <isotope class="col-xs-12 remove-padding" [options]="{ transitionDuration: '0.8s',
+    itemSelector:'isotope-brick',stagger: 30}">
+        <isotope-brick class="col-xs-4 col-sm-3 col-md-4 remove-padding brick"
+         *ngFor="let follower of followers">
+            <div class="isotope-container">
+                <app-follower [follower]="follower" (remove)="onRemove($event)"></app-follower>
+            </div>
+        </isotope-brick>
+        <div *ngIf="!followers || followers.length==0">
+            <br>
+            <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span> No followers available for selected date.
+            </div>
+        </div>
+    </isotope>
+    <div class="alert alert-danger errorMessage" *ngIf="errorMessage!=''">{{errorMessage}}</div>
+</div>
