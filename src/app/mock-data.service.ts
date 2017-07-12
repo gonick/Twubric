@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class MockDataService {
 
-  private fileUrl: string = "/assets/dummy_data.json";
+  private fileUrl: string = "/src/assets/dummy_data.json";
   constructor(private http: Http) { }
 
   getFollowers(): Observable<Object> {
