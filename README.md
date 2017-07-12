@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 
+## How to install
+
+1. Download the zip on your computer.
+2. Extract the contents of the zip file.
+3. Open cmd prompt. Navigate to extracted folder i.e "twubric-master" through cmd prompt.
+4. Run command "npm install" to load all the required dependencies. This will take some time.
+5. Run "npm start".
+6. Open url "localhost:4200".
+
 ## Development server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
